@@ -8,6 +8,5 @@ setup(
     license='',
     author='masuk',
     author_email='',
-    description='my small graph package',
-    python_requires='>=3.11'
+    description='my small graph package'
 )
