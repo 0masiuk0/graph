@@ -14,6 +14,9 @@ class Graph:
     def add_node(self, key, node):
         self.nodes[key] = node
 
+    def __getitem__(self, key):
+        return self.nodes[key]
+
     def remove_node(self, key):
         self.validate_nodes(key)
         self.nodes.pop()
