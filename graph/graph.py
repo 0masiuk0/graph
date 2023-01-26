@@ -19,7 +19,7 @@ class Graph:
 
     def remove_node(self, key):
         self.validate_nodes(key)
-        self.nodes.pop()
+        self.nodes.pop(key)
         self.__connectivity.pop(key, None)
         for each_node in self.__connectivity.values():
             each_node.pop(key, None)
